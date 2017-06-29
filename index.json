@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 0,
     "failures": 0,
-    "start": "2017-06-29T10:03:21.086Z",
-    "end": "2017-06-29T10:03:28.669Z",
-    "duration": 7583,
+    "start": "2017-06-29T10:03:31.110Z",
+    "end": "2017-06-29T10:03:38.796Z",
+    "duration": 7686,
     "testsRegistered": 10,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -22,7 +22,7 @@
     "title": "",
     "suites": [
       {
-        "title": "PUBLIC API",
+        "title": "V2 PUBLIC API",
         "suites": [
           {
             "title": "#GET Homepage Section",
@@ -30,9 +30,9 @@
             "tests": [
               {
                 "title": "should return Homepage Section",
-                "fullTitle": "PUBLIC API #GET Homepage Section should return Homepage Section",
+                "fullTitle": "V2 PUBLIC API #GET Homepage Section should return Homepage Section",
                 "timedOut": false,
-                "duration": 46,
+                "duration": 58,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -41,8 +41,8 @@
                 "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++title%2C%0A++++++++++++++++++++++++subTitle%2C%0A++++++++++++++++++++++++sectionType%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e2c20c59-5e1d-4dd5-a3f7-47ecddce246c",
-                "parentUUID": "1d8c326f-9fd2-4ab3-8613-41435ebd5f25",
+                "uuid": "39abae23-1796-4653-95d5-e9701af29141",
+                "parentUUID": "4ebbe14e-4d7b-47ed-83b5-87acdd4b1bf8",
                 "isHook": false,
                 "skipped": false
               }
@@ -51,16 +51,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "1d8c326f-9fd2-4ab3-8613-41435ebd5f25",
+            "uuid": "4ebbe14e-4d7b-47ed-83b5-87acdd4b1bf8",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Homepage Section",
-                "fullTitle": "PUBLIC API #GET Homepage Section should return Homepage Section",
+                "fullTitle": "V2 PUBLIC API #GET Homepage Section should return Homepage Section",
                 "timedOut": false,
-                "duration": 46,
+                "duration": 58,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -69,8 +69,8 @@
                 "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++title%2C%0A++++++++++++++++++++++++subTitle%2C%0A++++++++++++++++++++++++sectionType%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "e2c20c59-5e1d-4dd5-a3f7-47ecddce246c",
-                "parentUUID": "1d8c326f-9fd2-4ab3-8613-41435ebd5f25",
+                "uuid": "39abae23-1796-4653-95d5-e9701af29141",
+                "parentUUID": "4ebbe14e-4d7b-47ed-83b5-87acdd4b1bf8",
                 "isHook": false,
                 "skipped": false
               }
@@ -90,7 +90,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 46,
+            "duration": 58,
             "rootEmpty": false
           },
           {
@@ -99,9 +99,9 @@
             "tests": [
               {
                 "title": "should return Venues List Campaign",
-                "fullTitle": "PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
                 "timedOut": false,
-                "duration": 24,
+                "duration": 22,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -110,8 +110,8 @@
                 "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true%2C+sectionType%3A%22campaign-venues-list%22)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8ee0dc74-9e38-490f-a6ee-852e1b865688",
-                "parentUUID": "063897f6-1154-433e-b504-825e1ce01bb7",
+                "uuid": "bcbbf616-7c4d-48ea-ac23-4ebda0a6ee6b",
+                "parentUUID": "abde9e67-4bc5-4e7e-a932-4edf0f3f41d7",
                 "isHook": false,
                 "skipped": false
               }
@@ -120,16 +120,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "063897f6-1154-433e-b504-825e1ce01bb7",
+            "uuid": "abde9e67-4bc5-4e7e-a932-4edf0f3f41d7",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues List Campaign",
-                "fullTitle": "PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
                 "timedOut": false,
-                "duration": 24,
+                "duration": 22,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -138,8 +138,8 @@
                 "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true%2C+sectionType%3A%22campaign-venues-list%22)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "8ee0dc74-9e38-490f-a6ee-852e1b865688",
-                "parentUUID": "063897f6-1154-433e-b504-825e1ce01bb7",
+                "uuid": "bcbbf616-7c4d-48ea-ac23-4ebda0a6ee6b",
+                "parentUUID": "abde9e67-4bc5-4e7e-a932-4edf0f3f41d7",
                 "isHook": false,
                 "skipped": false
               }
@@ -159,7 +159,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 24,
+            "duration": 22,
             "rootEmpty": false
           },
           {
@@ -168,9 +168,9 @@
             "tests": [
               {
                 "title": "should return Venues Venues List Data [KTV]",
-                "fullTitle": "PUBLIC API #GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
+                "fullTitle": "V2 PUBLIC API #GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
                 "timedOut": false,
-                "duration": 426,
+                "duration": 431,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -179,8 +179,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22KTV%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22%2C+latitude%3A+%2231.230416%22%2C+longitude%3A+%22121.473701%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "865fbb9e-3924-4c57-97bf-128b4b702b88",
-                "parentUUID": "2410476d-09b7-4fd5-82f5-f33d45ec91df",
+                "uuid": "16179b74-8f93-4c71-a9ec-462a199760ff",
+                "parentUUID": "014e4f0d-a192-4302-8492-8b56c6895795",
                 "isHook": false,
                 "skipped": false
               }
@@ -189,16 +189,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "2410476d-09b7-4fd5-82f5-f33d45ec91df",
+            "uuid": "014e4f0d-a192-4302-8492-8b56c6895795",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues Venues List Data [KTV]",
-                "fullTitle": "PUBLIC API #GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
+                "fullTitle": "V2 PUBLIC API #GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
                 "timedOut": false,
-                "duration": 426,
+                "duration": 431,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -207,8 +207,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22KTV%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22%2C+latitude%3A+%2231.230416%22%2C+longitude%3A+%22121.473701%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "865fbb9e-3924-4c57-97bf-128b4b702b88",
-                "parentUUID": "2410476d-09b7-4fd5-82f5-f33d45ec91df",
+                "uuid": "16179b74-8f93-4c71-a9ec-462a199760ff",
+                "parentUUID": "014e4f0d-a192-4302-8492-8b56c6895795",
                 "isHook": false,
                 "skipped": false
               }
@@ -228,7 +228,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 426,
+            "duration": 431,
             "rootEmpty": false
           },
           {
@@ -237,9 +237,9 @@
             "tests": [
               {
                 "title": "should return Venues List Data [BAR]",
-                "fullTitle": "PUBLIC API #GET Venues List Data [BAR] should return Venues List Data [BAR]",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Data [BAR] should return Venues List Data [BAR]",
                 "timedOut": false,
-                "duration": 253,
+                "duration": 336,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -248,8 +248,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22BAR%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d710a10d-c820-4279-b83f-4be6ddff6194",
-                "parentUUID": "c185c089-84a7-4e3f-8984-2f648ad52fcb",
+                "uuid": "bf2e947b-b3dc-4c09-b7ea-694f76d35d76",
+                "parentUUID": "92023ef0-0133-474a-95a6-aefda720dda1",
                 "isHook": false,
                 "skipped": false
               }
@@ -258,16 +258,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "c185c089-84a7-4e3f-8984-2f648ad52fcb",
+            "uuid": "92023ef0-0133-474a-95a6-aefda720dda1",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues List Data [BAR]",
-                "fullTitle": "PUBLIC API #GET Venues List Data [BAR] should return Venues List Data [BAR]",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Data [BAR] should return Venues List Data [BAR]",
                 "timedOut": false,
-                "duration": 253,
+                "duration": 336,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -276,8 +276,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22BAR%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "d710a10d-c820-4279-b83f-4be6ddff6194",
-                "parentUUID": "c185c089-84a7-4e3f-8984-2f648ad52fcb",
+                "uuid": "bf2e947b-b3dc-4c09-b7ea-694f76d35d76",
+                "parentUUID": "92023ef0-0133-474a-95a6-aefda720dda1",
                 "isHook": false,
                 "skipped": false
               }
@@ -297,7 +297,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 253,
+            "duration": 336,
             "rootEmpty": false
           },
           {
@@ -306,9 +306,9 @@
             "tests": [
               {
                 "title": "should return Venues List Data [CLUB]",
-                "fullTitle": "PUBLIC API #GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
                 "timedOut": false,
-                "duration": 62,
+                "duration": 63,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -317,8 +317,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(cityId%3A+%2258d1ecade841a18ba5399026%22%2C+type%3A+%22CLUB%22%2C+isValid%3A+1%2C+isDeleted%3A+0)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c53fdf55-c3ff-4888-b801-025ecbe2e4c3",
-                "parentUUID": "120b101c-ee1e-4134-b809-9cfafa0b6f25",
+                "uuid": "d324037e-d0ba-4893-a0be-d43968f75805",
+                "parentUUID": "8e359ed0-2885-465c-b139-8bed95339b70",
                 "isHook": false,
                 "skipped": false
               }
@@ -327,16 +327,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "120b101c-ee1e-4134-b809-9cfafa0b6f25",
+            "uuid": "8e359ed0-2885-465c-b139-8bed95339b70",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues List Data [CLUB]",
-                "fullTitle": "PUBLIC API #GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
                 "timedOut": false,
-                "duration": 62,
+                "duration": 63,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -345,8 +345,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(cityId%3A+%2258d1ecade841a18ba5399026%22%2C+type%3A+%22CLUB%22%2C+isValid%3A+1%2C+isDeleted%3A+0)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "c53fdf55-c3ff-4888-b801-025ecbe2e4c3",
-                "parentUUID": "120b101c-ee1e-4134-b809-9cfafa0b6f25",
+                "uuid": "d324037e-d0ba-4893-a0be-d43968f75805",
+                "parentUUID": "8e359ed0-2885-465c-b139-8bed95339b70",
                 "isHook": false,
                 "skipped": false
               }
@@ -366,7 +366,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 62,
+            "duration": 63,
             "rootEmpty": false
           },
           {
@@ -375,9 +375,9 @@
             "tests": [
               {
                 "title": "should return Venues List Feature",
-                "fullTitle": "PUBLIC API #GET Venues List Feature should return Venues List Feature",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Feature should return Venues List Feature",
                 "timedOut": false,
-                "duration": 18,
+                "duration": 17,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -386,8 +386,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++feature(filter%3A+%22ktv-filter%22%2C+limit%3A+5)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2ddfc7eb-bf1c-4c5f-a293-8fd74b57acb4",
-                "parentUUID": "e9b78f65-a8df-4433-97c4-472299201ecb",
+                "uuid": "9dfb95d2-23bf-439a-9d9c-c5c09223f5f3",
+                "parentUUID": "7b5bec29-806b-4528-855f-11f610cb0e4c",
                 "isHook": false,
                 "skipped": false
               }
@@ -396,16 +396,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "e9b78f65-a8df-4433-97c4-472299201ecb",
+            "uuid": "7b5bec29-806b-4528-855f-11f610cb0e4c",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues List Feature",
-                "fullTitle": "PUBLIC API #GET Venues List Feature should return Venues List Feature",
+                "fullTitle": "V2 PUBLIC API #GET Venues List Feature should return Venues List Feature",
                 "timedOut": false,
-                "duration": 18,
+                "duration": 17,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -414,8 +414,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++feature(filter%3A+%22ktv-filter%22%2C+limit%3A+5)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "2ddfc7eb-bf1c-4c5f-a293-8fd74b57acb4",
-                "parentUUID": "e9b78f65-a8df-4433-97c4-472299201ecb",
+                "uuid": "9dfb95d2-23bf-439a-9d9c-c5c09223f5f3",
+                "parentUUID": "7b5bec29-806b-4528-855f-11f610cb0e4c",
                 "isHook": false,
                 "skipped": false
               }
@@ -435,7 +435,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 18,
+            "duration": 17,
             "rootEmpty": false
           },
           {
@@ -444,9 +444,9 @@
             "tests": [
               {
                 "title": "should return Venues List City List",
-                "fullTitle": "PUBLIC API #GET Venues List City List should return Venues List City List",
+                "fullTitle": "V2 PUBLIC API #GET Venues List City List should return Venues List City List",
                 "timedOut": false,
-                "duration": 15,
+                "duration": 14,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -455,8 +455,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/cities').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "18d9e0fa-60eb-4ca5-9ac3-ceb68bb3ea6a",
-                "parentUUID": "917f344c-543a-465a-ac38-62d3aa401811",
+                "uuid": "a3a6e20b-6f6c-48b9-97a9-797f2f287c04",
+                "parentUUID": "c4baa4a2-3696-48db-a5c5-d5a4d7fc8245",
                 "isHook": false,
                 "skipped": false
               }
@@ -465,16 +465,16 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/publicAPI.js",
-            "uuid": "917f344c-543a-465a-ac38-62d3aa401811",
+            "uuid": "c4baa4a2-3696-48db-a5c5-d5a4d7fc8245",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
             "passes": [
               {
                 "title": "should return Venues List City List",
-                "fullTitle": "PUBLIC API #GET Venues List City List should return Venues List City List",
+                "fullTitle": "V2 PUBLIC API #GET Venues List City List should return Venues List City List",
                 "timedOut": false,
-                "duration": 15,
+                "duration": 14,
                 "state": "passed",
                 "speed": "fast",
                 "pass": true,
@@ -483,8 +483,8 @@
                 "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/cities').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "18d9e0fa-60eb-4ca5-9ac3-ceb68bb3ea6a",
-                "parentUUID": "917f344c-543a-465a-ac38-62d3aa401811",
+                "uuid": "a3a6e20b-6f6c-48b9-97a9-797f2f287c04",
+                "parentUUID": "c4baa4a2-3696-48db-a5c5-d5a4d7fc8245",
                 "isHook": false,
                 "skipped": false
               }
@@ -504,7 +504,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 15,
+            "duration": 14,
             "rootEmpty": false
           }
         ],
@@ -513,7 +513,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/test/publicAPI.js",
-        "uuid": "55cabe95-6b49-49c7-a2ff-851ca59a7de6",
+        "uuid": "da741b5d-e833-40fa-a013-77da3d1bd527",
         "beforeHooks": [],
         "afterHooks": [],
         "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/publicAPI.js",
@@ -547,7 +547,7 @@
                 "title": "should return Venues List [KTV]",
                 "fullTitle": "PHP PUBLIC API #GET Venues List [KTV] should return Venues List [KTV]",
                 "timedOut": false,
-                "duration": 6514,
+                "duration": 6424,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -556,8 +556,8 @@
                 "code": "// this.timeout(10000)\nrequest.getAsync('http://production.ye-dian.com/booking/Xktvlist').then((res, data) => {\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bd6b1926-62cb-404b-9ef3-fdcc8ed63065",
-                "parentUUID": "1d11579b-d128-4744-8bd7-7d209bc2fbd3",
+                "uuid": "92771a4e-2ff0-450a-b71d-6442cfa4964a",
+                "parentUUID": "fa645124-efd7-4e83-9be5-aa8a6087783c",
                 "isHook": false,
                 "skipped": false
               }
@@ -566,7 +566,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/PHPpublicAPI.js",
-            "uuid": "1d11579b-d128-4744-8bd7-7d209bc2fbd3",
+            "uuid": "fa645124-efd7-4e83-9be5-aa8a6087783c",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/PHPpublicAPI.js",
@@ -575,7 +575,7 @@
                 "title": "should return Venues List [KTV]",
                 "fullTitle": "PHP PUBLIC API #GET Venues List [KTV] should return Venues List [KTV]",
                 "timedOut": false,
-                "duration": 6514,
+                "duration": 6424,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -584,8 +584,8 @@
                 "code": "// this.timeout(10000)\nrequest.getAsync('http://production.ye-dian.com/booking/Xktvlist').then((res, data) => {\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "bd6b1926-62cb-404b-9ef3-fdcc8ed63065",
-                "parentUUID": "1d11579b-d128-4744-8bd7-7d209bc2fbd3",
+                "uuid": "92771a4e-2ff0-450a-b71d-6442cfa4964a",
+                "parentUUID": "fa645124-efd7-4e83-9be5-aa8a6087783c",
                 "isHook": false,
                 "skipped": false
               }
@@ -605,7 +605,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 6514,
+            "duration": 6424,
             "rootEmpty": false
           },
           {
@@ -616,7 +616,7 @@
                 "title": "should return Venues List Campaign",
                 "fullTitle": "PHP PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
                 "timedOut": false,
-                "duration": 63,
+                "duration": 73,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -625,8 +625,8 @@
                 "code": "request.getAsync('http://production.ye-dian.com/FilterStatus/Active').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6a94dbdf-5758-47a5-9a1e-0a5873795874",
-                "parentUUID": "496820a4-bd7d-4161-9af3-2877645fb5e0",
+                "uuid": "e2e708cf-31b4-441b-9380-ae30bf231aef",
+                "parentUUID": "5bf917c8-5920-46c9-9b18-f268a318aee3",
                 "isHook": false,
                 "skipped": false
               }
@@ -635,7 +635,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/PHPpublicAPI.js",
-            "uuid": "496820a4-bd7d-4161-9af3-2877645fb5e0",
+            "uuid": "5bf917c8-5920-46c9-9b18-f268a318aee3",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/PHPpublicAPI.js",
@@ -644,7 +644,7 @@
                 "title": "should return Venues List Campaign",
                 "fullTitle": "PHP PUBLIC API #GET Venues List Campaign should return Venues List Campaign",
                 "timedOut": false,
-                "duration": 63,
+                "duration": 73,
                 "state": "passed",
                 "speed": "medium",
                 "pass": true,
@@ -653,8 +653,8 @@
                 "code": "request.getAsync('http://production.ye-dian.com/FilterStatus/Active').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "6a94dbdf-5758-47a5-9a1e-0a5873795874",
-                "parentUUID": "496820a4-bd7d-4161-9af3-2877645fb5e0",
+                "uuid": "e2e708cf-31b4-441b-9380-ae30bf231aef",
+                "parentUUID": "5bf917c8-5920-46c9-9b18-f268a318aee3",
                 "isHook": false,
                 "skipped": false
               }
@@ -674,7 +674,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 63,
+            "duration": 73,
             "rootEmpty": false
           },
           {
@@ -685,7 +685,7 @@
                 "title": "should return Venues List City List",
                 "fullTitle": "PHP PUBLIC API #GET Venues List City List should return Venues List City List",
                 "timedOut": false,
-                "duration": 150,
+                "duration": 233,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -694,8 +694,8 @@
                 "code": "request.getAsync('http://production.ye-dian.com/booking/Xktvdistrict?parent=310000').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "19161b44-a948-4ad1-93c7-3aab9ca45f26",
-                "parentUUID": "7b47bf39-fb50-40a3-8729-89d9ada39ba5",
+                "uuid": "76b01866-7394-4139-b719-c205f9aa28a8",
+                "parentUUID": "80ca3ddd-3539-4be0-9ed1-89dcd103fd71",
                 "isHook": false,
                 "skipped": false
               }
@@ -704,7 +704,7 @@
             "root": false,
             "_timeout": 2000,
             "file": "/test/PHPpublicAPI.js",
-            "uuid": "7b47bf39-fb50-40a3-8729-89d9ada39ba5",
+            "uuid": "80ca3ddd-3539-4be0-9ed1-89dcd103fd71",
             "beforeHooks": [],
             "afterHooks": [],
             "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/PHPpublicAPI.js",
@@ -713,7 +713,7 @@
                 "title": "should return Venues List City List",
                 "fullTitle": "PHP PUBLIC API #GET Venues List City List should return Venues List City List",
                 "timedOut": false,
-                "duration": 150,
+                "duration": 233,
                 "state": "passed",
                 "speed": "slow",
                 "pass": true,
@@ -722,8 +722,8 @@
                 "code": "request.getAsync('http://production.ye-dian.com/booking/Xktvdistrict?parent=310000').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
                 "err": {},
                 "isRoot": false,
-                "uuid": "19161b44-a948-4ad1-93c7-3aab9ca45f26",
-                "parentUUID": "7b47bf39-fb50-40a3-8729-89d9ada39ba5",
+                "uuid": "76b01866-7394-4139-b719-c205f9aa28a8",
+                "parentUUID": "80ca3ddd-3539-4be0-9ed1-89dcd103fd71",
                 "isHook": false,
                 "skipped": false
               }
@@ -743,7 +743,7 @@
             "hasFailures": false,
             "hasPending": false,
             "hasSkipped": false,
-            "duration": 150,
+            "duration": 233,
             "rootEmpty": false
           }
         ],
@@ -752,7 +752,7 @@
         "root": false,
         "_timeout": 2000,
         "file": "/test/PHPpublicAPI.js",
-        "uuid": "35418241-da24-4782-a8a9-840b0ef763b7",
+        "uuid": "e4d0e57f-278f-472d-aadd-c0efda6a8f12",
         "beforeHooks": [],
         "afterHooks": [],
         "fullFile": "/Users/wenqingyu/workspace/APAC_Yedian_QA/testScript/test/PHPpublicAPI.js",
@@ -780,7 +780,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "28a42287-32cb-4420-99fd-fdd0f0645085",
+    "uuid": "7716bbe5-ea52-4009-8177-6533fd145a17",
     "beforeHooks": [],
     "afterHooks": [],
     "fullFile": "",
@@ -809,7 +809,7 @@
       "title": "should return Homepage Section",
       "fullTitle": "#GET Homepage Section should return Homepage Section",
       "timedOut": false,
-      "duration": 46,
+      "duration": 58,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -818,8 +818,8 @@
       "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++title%2C%0A++++++++++++++++++++++++subTitle%2C%0A++++++++++++++++++++++++sectionType%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "e2c20c59-5e1d-4dd5-a3f7-47ecddce246c",
-      "parentUUID": "1d8c326f-9fd2-4ab3-8613-41435ebd5f25",
+      "uuid": "39abae23-1796-4653-95d5-e9701af29141",
+      "parentUUID": "4ebbe14e-4d7b-47ed-83b5-87acdd4b1bf8",
       "isHook": false,
       "skipped": false
     },
@@ -827,7 +827,7 @@
       "title": "should return Venues List Campaign",
       "fullTitle": "#GET Venues List Campaign should return Venues List Campaign",
       "timedOut": false,
-      "duration": 24,
+      "duration": 22,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -836,8 +836,8 @@
       "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true%2C+sectionType%3A%22campaign-venues-list%22)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "8ee0dc74-9e38-490f-a6ee-852e1b865688",
-      "parentUUID": "063897f6-1154-433e-b504-825e1ce01bb7",
+      "uuid": "bcbbf616-7c4d-48ea-ac23-4ebda0a6ee6b",
+      "parentUUID": "abde9e67-4bc5-4e7e-a932-4edf0f3f41d7",
       "isHook": false,
       "skipped": false
     },
@@ -845,7 +845,7 @@
       "title": "should return Venues Venues List Data [KTV]",
       "fullTitle": "#GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
       "timedOut": false,
-      "duration": 426,
+      "duration": 431,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -854,8 +854,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22KTV%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22%2C+latitude%3A+%2231.230416%22%2C+longitude%3A+%22121.473701%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "865fbb9e-3924-4c57-97bf-128b4b702b88",
-      "parentUUID": "2410476d-09b7-4fd5-82f5-f33d45ec91df",
+      "uuid": "16179b74-8f93-4c71-a9ec-462a199760ff",
+      "parentUUID": "014e4f0d-a192-4302-8492-8b56c6895795",
       "isHook": false,
       "skipped": false
     },
@@ -863,7 +863,7 @@
       "title": "should return Venues List Data [BAR]",
       "fullTitle": "#GET Venues List Data [BAR] should return Venues List Data [BAR]",
       "timedOut": false,
-      "duration": 253,
+      "duration": 336,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -872,8 +872,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22BAR%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "d710a10d-c820-4279-b83f-4be6ddff6194",
-      "parentUUID": "c185c089-84a7-4e3f-8984-2f648ad52fcb",
+      "uuid": "bf2e947b-b3dc-4c09-b7ea-694f76d35d76",
+      "parentUUID": "92023ef0-0133-474a-95a6-aefda720dda1",
       "isHook": false,
       "skipped": false
     },
@@ -881,7 +881,7 @@
       "title": "should return Venues List Data [CLUB]",
       "fullTitle": "#GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
       "timedOut": false,
-      "duration": 62,
+      "duration": 63,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -890,8 +890,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(cityId%3A+%2258d1ecade841a18ba5399026%22%2C+type%3A+%22CLUB%22%2C+isValid%3A+1%2C+isDeleted%3A+0)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "c53fdf55-c3ff-4888-b801-025ecbe2e4c3",
-      "parentUUID": "120b101c-ee1e-4134-b809-9cfafa0b6f25",
+      "uuid": "d324037e-d0ba-4893-a0be-d43968f75805",
+      "parentUUID": "8e359ed0-2885-465c-b139-8bed95339b70",
       "isHook": false,
       "skipped": false
     },
@@ -899,7 +899,7 @@
       "title": "should return Venues List Feature",
       "fullTitle": "#GET Venues List Feature should return Venues List Feature",
       "timedOut": false,
-      "duration": 18,
+      "duration": 17,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -908,8 +908,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++feature(filter%3A+%22ktv-filter%22%2C+limit%3A+5)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "2ddfc7eb-bf1c-4c5f-a293-8fd74b57acb4",
-      "parentUUID": "e9b78f65-a8df-4433-97c4-472299201ecb",
+      "uuid": "9dfb95d2-23bf-439a-9d9c-c5c09223f5f3",
+      "parentUUID": "7b5bec29-806b-4528-855f-11f610cb0e4c",
       "isHook": false,
       "skipped": false
     },
@@ -917,7 +917,7 @@
       "title": "should return Venues List City List",
       "fullTitle": "#GET Venues List City List should return Venues List City List",
       "timedOut": false,
-      "duration": 15,
+      "duration": 14,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -926,8 +926,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/cities').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "18d9e0fa-60eb-4ca5-9ac3-ceb68bb3ea6a",
-      "parentUUID": "917f344c-543a-465a-ac38-62d3aa401811",
+      "uuid": "a3a6e20b-6f6c-48b9-97a9-797f2f287c04",
+      "parentUUID": "c4baa4a2-3696-48db-a5c5-d5a4d7fc8245",
       "isHook": false,
       "skipped": false
     },
@@ -935,7 +935,7 @@
       "title": "should return Venues List [KTV]",
       "fullTitle": "#GET Venues List [KTV] should return Venues List [KTV]",
       "timedOut": false,
-      "duration": 6514,
+      "duration": 6424,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -944,8 +944,8 @@
       "code": "// this.timeout(10000)\nrequest.getAsync('http://production.ye-dian.com/booking/Xktvlist').then((res, data) => {\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "bd6b1926-62cb-404b-9ef3-fdcc8ed63065",
-      "parentUUID": "1d11579b-d128-4744-8bd7-7d209bc2fbd3",
+      "uuid": "92771a4e-2ff0-450a-b71d-6442cfa4964a",
+      "parentUUID": "fa645124-efd7-4e83-9be5-aa8a6087783c",
       "isHook": false,
       "skipped": false
     },
@@ -953,7 +953,7 @@
       "title": "should return Venues List Campaign",
       "fullTitle": "#GET Venues List Campaign should return Venues List Campaign",
       "timedOut": false,
-      "duration": 63,
+      "duration": 73,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -962,8 +962,8 @@
       "code": "request.getAsync('http://production.ye-dian.com/FilterStatus/Active').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "6a94dbdf-5758-47a5-9a1e-0a5873795874",
-      "parentUUID": "496820a4-bd7d-4161-9af3-2877645fb5e0",
+      "uuid": "e2e708cf-31b4-441b-9380-ae30bf231aef",
+      "parentUUID": "5bf917c8-5920-46c9-9b18-f268a318aee3",
       "isHook": false,
       "skipped": false
     },
@@ -971,7 +971,7 @@
       "title": "should return Venues List City List",
       "fullTitle": "#GET Venues List City List should return Venues List City List",
       "timedOut": false,
-      "duration": 150,
+      "duration": 233,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -980,8 +980,8 @@
       "code": "request.getAsync('http://production.ye-dian.com/booking/Xktvdistrict?parent=310000').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "19161b44-a948-4ad1-93c7-3aab9ca45f26",
-      "parentUUID": "7b47bf39-fb50-40a3-8729-89d9ada39ba5",
+      "uuid": "76b01866-7394-4139-b719-c205f9aa28a8",
+      "parentUUID": "80ca3ddd-3539-4be0-9ed1-89dcd103fd71",
       "isHook": false,
       "skipped": false
     }
@@ -992,7 +992,7 @@
       "title": "should return Homepage Section",
       "fullTitle": "#GET Homepage Section should return Homepage Section",
       "timedOut": false,
-      "duration": 46,
+      "duration": 58,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -1001,8 +1001,8 @@
       "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++title%2C%0A++++++++++++++++++++++++subTitle%2C%0A++++++++++++++++++++++++sectionType%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "e2c20c59-5e1d-4dd5-a3f7-47ecddce246c",
-      "parentUUID": "1d8c326f-9fd2-4ab3-8613-41435ebd5f25",
+      "uuid": "39abae23-1796-4653-95d5-e9701af29141",
+      "parentUUID": "4ebbe14e-4d7b-47ed-83b5-87acdd4b1bf8",
       "isHook": false,
       "skipped": false
     },
@@ -1010,7 +1010,7 @@
       "title": "should return Venues List Campaign",
       "fullTitle": "#GET Venues List Campaign should return Venues List Campaign",
       "timedOut": false,
-      "duration": 24,
+      "duration": 22,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1019,8 +1019,8 @@
       "code": "request.getAsync('http://cmscore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++view(isDisplayed%3A+true%2C+sectionType%3A%22campaign-venues-list%22)%0A++++++++++++++++%7B%0A++++++++++++++++++++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++viewType%2C%0A++++++++++++++++++++++++cityList%2C%0A++++++++++++++++++++++++url%2C%0A++++++++++++++++++++++++image%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A++++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "8ee0dc74-9e38-490f-a6ee-852e1b865688",
-      "parentUUID": "063897f6-1154-433e-b504-825e1ce01bb7",
+      "uuid": "bcbbf616-7c4d-48ea-ac23-4ebda0a6ee6b",
+      "parentUUID": "abde9e67-4bc5-4e7e-a932-4edf0f3f41d7",
       "isHook": false,
       "skipped": false
     },
@@ -1028,7 +1028,7 @@
       "title": "should return Venues Venues List Data [KTV]",
       "fullTitle": "#GET Venues Venues List Data [KTV] should return Venues Venues List Data [KTV]",
       "timedOut": false,
-      "duration": 426,
+      "duration": 431,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1037,8 +1037,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22KTV%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22%2C+latitude%3A+%2231.230416%22%2C+longitude%3A+%22121.473701%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "865fbb9e-3924-4c57-97bf-128b4b702b88",
-      "parentUUID": "2410476d-09b7-4fd5-82f5-f33d45ec91df",
+      "uuid": "16179b74-8f93-4c71-a9ec-462a199760ff",
+      "parentUUID": "014e4f0d-a192-4302-8492-8b56c6895795",
       "isHook": false,
       "skipped": false
     },
@@ -1046,7 +1046,7 @@
       "title": "should return Venues List Data [BAR]",
       "fullTitle": "#GET Venues List Data [BAR] should return Venues List Data [BAR]",
       "timedOut": false,
-      "duration": 253,
+      "duration": 336,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1055,8 +1055,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(type%3A+%22BAR%22%2C+isValid%3A+1%2C+isDeleted%3A+0%2C+offset%3A+0%2C+limit%3A+27%2C+cityId%3A+%2258d1ecade841a18ba5399026%22)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "d710a10d-c820-4279-b83f-4be6ddff6194",
-      "parentUUID": "c185c089-84a7-4e3f-8984-2f648ad52fcb",
+      "uuid": "bf2e947b-b3dc-4c09-b7ea-694f76d35d76",
+      "parentUUID": "92023ef0-0133-474a-95a6-aefda720dda1",
       "isHook": false,
       "skipped": false
     },
@@ -1064,7 +1064,7 @@
       "title": "should return Venues List Data [CLUB]",
       "fullTitle": "#GET Venues List Data [CLUB] should return Venues List Data [CLUB]",
       "timedOut": false,
-      "duration": 62,
+      "duration": 63,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -1073,8 +1073,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++venues(cityId%3A+%2258d1ecade841a18ba5399026%22%2C+type%3A+%22CLUB%22%2C+isValid%3A+1%2C+isDeleted%3A+0)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++type%2C%0A++++++++++++++++++++++++images%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++++++remarks%2C%0A++++++++++++++++++++++++distance%2C%0A++++++++++++++++++++++++comment%7B%0A++++++++++++++++++++++++++++totalScore%0A++++++++++++++++++++++++++++count%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++location%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++rating+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++type%0A++++++++++++++++++++++++++++rate%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++averageSpending%2C%0A++++++++++++++++++++++++combo+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++venueType%0A++++++++++++++++++++++++area+%7B%0A++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++city+%7B%0A++++++++++++++++++++++++++++++++_id%0A++++++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++++++phone_code%0A++++++++++++++++++++++++++++%7D%0A++++++++++++++++++++++++++++name%0A++++++++++++++++++++++++++++sort%0A++++++++++++++++++++++++%7D%2C%0A++++++++++++++++++++++++onlinePay%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "c53fdf55-c3ff-4888-b801-025ecbe2e4c3",
-      "parentUUID": "120b101c-ee1e-4134-b809-9cfafa0b6f25",
+      "uuid": "d324037e-d0ba-4893-a0be-d43968f75805",
+      "parentUUID": "8e359ed0-2885-465c-b139-8bed95339b70",
       "isHook": false,
       "skipped": false
     },
@@ -1082,7 +1082,7 @@
       "title": "should return Venues List Feature",
       "fullTitle": "#GET Venues List Feature should return Venues List Feature",
       "timedOut": false,
-      "duration": 18,
+      "duration": 17,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1091,8 +1091,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/graphql?query=%0A++++++++++++query+%7B%0A++++++++++++++++feature(filter%3A+%22ktv-filter%22%2C+limit%3A+5)%0A++++++++++++++++%7B+++count%2C%0A++++++++++++++++++++rows+%7B%0A++++++++++++++++++++++++_id%2C%0A++++++++++++++++++++++++name%2C%0A++++++++++++++++++++%7D%0A++++++++++++++++%7D%0A++++++++++++%7D%0A+++++++').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "2ddfc7eb-bf1c-4c5f-a293-8fd74b57acb4",
-      "parentUUID": "e9b78f65-a8df-4433-97c4-472299201ecb",
+      "uuid": "9dfb95d2-23bf-439a-9d9c-c5c09223f5f3",
+      "parentUUID": "7b5bec29-806b-4528-855f-11f610cb0e4c",
       "isHook": false,
       "skipped": false
     },
@@ -1100,7 +1100,7 @@
       "title": "should return Venues List City List",
       "fullTitle": "#GET Venues List City List should return Venues List City List",
       "timedOut": false,
-      "duration": 15,
+      "duration": 14,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1109,8 +1109,8 @@
       "code": "request.getAsync('http://venuescore.prod-v1.ye-dian.com/public/cities').then(res => {\n  let data = JSON.parse(res.body)\n  assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "18d9e0fa-60eb-4ca5-9ac3-ceb68bb3ea6a",
-      "parentUUID": "917f344c-543a-465a-ac38-62d3aa401811",
+      "uuid": "a3a6e20b-6f6c-48b9-97a9-797f2f287c04",
+      "parentUUID": "c4baa4a2-3696-48db-a5c5-d5a4d7fc8245",
       "isHook": false,
       "skipped": false
     },
@@ -1118,7 +1118,7 @@
       "title": "should return Venues List [KTV]",
       "fullTitle": "#GET Venues List [KTV] should return Venues List [KTV]",
       "timedOut": false,
-      "duration": 6514,
+      "duration": 6424,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1127,8 +1127,8 @@
       "code": "// this.timeout(10000)\nrequest.getAsync('http://production.ye-dian.com/booking/Xktvlist').then((res, data) => {\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "bd6b1926-62cb-404b-9ef3-fdcc8ed63065",
-      "parentUUID": "1d11579b-d128-4744-8bd7-7d209bc2fbd3",
+      "uuid": "92771a4e-2ff0-450a-b71d-6442cfa4964a",
+      "parentUUID": "fa645124-efd7-4e83-9be5-aa8a6087783c",
       "isHook": false,
       "skipped": false
     },
@@ -1136,7 +1136,7 @@
       "title": "should return Venues List Campaign",
       "fullTitle": "#GET Venues List Campaign should return Venues List Campaign",
       "timedOut": false,
-      "duration": 63,
+      "duration": 73,
       "state": "passed",
       "speed": "medium",
       "pass": true,
@@ -1145,8 +1145,8 @@
       "code": "request.getAsync('http://production.ye-dian.com/FilterStatus/Active').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "6a94dbdf-5758-47a5-9a1e-0a5873795874",
-      "parentUUID": "496820a4-bd7d-4161-9af3-2877645fb5e0",
+      "uuid": "e2e708cf-31b4-441b-9380-ae30bf231aef",
+      "parentUUID": "5bf917c8-5920-46c9-9b18-f268a318aee3",
       "isHook": false,
       "skipped": false
     },
@@ -1154,7 +1154,7 @@
       "title": "should return Venues List City List",
       "fullTitle": "#GET Venues List City List should return Venues List City List",
       "timedOut": false,
-      "duration": 150,
+      "duration": 233,
       "state": "passed",
       "speed": "slow",
       "pass": true,
@@ -1163,8 +1163,8 @@
       "code": "request.getAsync('http://production.ye-dian.com/booking/Xktvdistrict?parent=310000').then(res => {\n  // let data = JSON.parse(res.body)\n  // assert.equal(data.code, 200)\n  done()\n})",
       "err": {},
       "isRoot": false,
-      "uuid": "19161b44-a948-4ad1-93c7-3aab9ca45f26",
-      "parentUUID": "7b47bf39-fb50-40a3-8729-89d9ada39ba5",
+      "uuid": "76b01866-7394-4139-b719-c205f9aa28a8",
+      "parentUUID": "80ca3ddd-3539-4be0-9ed1-89dcd103fd71",
       "isHook": false,
       "skipped": false
     }
